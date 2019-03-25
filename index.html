@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>APP Lista Compra</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container miestilo" id="contenedor">
+      <div class="row cabecera justify-content-center mt-5" id="cabecera">
+        <h1 id="titulo1">
+          <i class="material-icons" style="font-size: 1em">shopping_cart</i>
+          Lista de la Compra
+        </h1>
+      </div>
+      <form id="formulario">
+        <div id="botones" class="row container form-group">
+          <div class="col-5">
+            <input
+              type="text"
+              id="articulo"
+              class="form-control"
+              placeholder="Indica un Articulo a comprar"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="number"
+              class="form-control"
+              id="cantidad"
+              placeholder="Cantidad"
+            />
+          </div>
+          <div class="col-2">
+            <select class="form-control" id="prioridad">
+              <option value="Baja" selected>Baja</option>
+              <option value="Alta">Alta</option>
+              <option value="Urgente">Urgente</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <button id="agregar" class="btn btn-primary form-control">
+              Añadir
+            </button>
+          </div>
+        </div>
+      </form>
+      <div
+        id="listacompra"
+        class="listacompra rounded"
+        style="padding: 15px; background-color:aquamarine"
+      ></div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
